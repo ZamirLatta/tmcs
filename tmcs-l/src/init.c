@@ -1,59 +1,95 @@
 // initialize board
-//#include "/home/zmr_01001100/tmcs_/tmcs_/tmcs-l/lib/start.h"
+#include "/home/zmr_4c/tmcs/tmcs-l/lib/start.h"
 #include <stdio.h>
 
+char a1[] = " wr1 ";
+    char a2[] = " wap ";
+    char a3[] = "     ";
+    char a4[] = "     ";
+    char a5[] = "     ";
+    char a6[] = "     ";
+    char a7[] = " bap ";
+    char a8[] = " br1 ";
 
-/* key 
-    a = -1
-    b = -2
-    c = -3
-    d = -4
-    e = -5
-    f = -6
-    g = -7
-    h = -8
-*/
+    char b1[] = " wn1 ";
+    char b2[] = " wbp ";
+    char b3[] = "     ";
+    char b4[] = "     ";
+    char b5[] = "     ";
+    char b6[] = "     ";
+    char b7[] = " bbp ";
+    char b8[] = " bn1 ";
 
-    // white pieces:
-    int wap[] = {-1, 2};
-    int wbp[] = {-2, 2};
-    int wcp[] = {-3, 2};
-    int wdp[] = {-4, 2};
-    int wep[] = {-5, 2};
-    int wfp[] = {-6, 2};
-    int wgp[] = {-7, 2};
-    int whp[] = {-8, 2};
+    char c1[] = " wb1 ";
+    char c2[] = " wcp ";
+    char c3[] = "     ";
+    char c4[] = "     ";
+    char c5[] = "     ";
+    char c6[] = "     ";
+    char c7[] = " bcp ";
+    char c8[] = " bb1 ";
 
-    int wr1[] = {-1, 1};
-    int wn1[] = {-2, 1};
-    int wb1[] = {-3, 1};
-    int wq[] = {-4, 1};
-    int wk[] = {-5, 1};
-    int wb2[] = {-6, 1};
-    int wn2[] = {-7, 1};
-    int wr2[] = {-8, 1};
+    char d1[] = " w1 ";
+    char d2[] = " wdp ";
+    char d3[] = "     ";
+    char d4[] = "     ";
+    char d5[] = "     ";
+    char d6[] = "     ";
+    char d7[] = " bdp ";
+    char d8[] = " bq ";
 
-    // black pieces:
-    int bap[] = {-1, 7};
-    int bbp[] = {-2, 7};
-    int bcp[] = {-3, 7};
-    int bdp[] = {-4, 7};
-    int bep[] = {-5, 7};
-    int bfp[] = {-6, 7};
-    int bgp[] = {-7, 7};
-    int bhp[] = {-8, 7};
+    char e1[] = " wk ";
+    char e2[] = " wep ";
+    char e3[] = "     ";
+    char e4[] = "     ";
+    char e5[] = "     ";
+    char e6[] = "     ";
+    char e7[] = " bep ";
+    char e8[] = " bk ";
 
-    int br1[] = {-1, 8};
-    int bn1[] = {-2, 8};
-    int bb1[] = {-3, 8};
-    int bq[] = {-4, 8};
-    int bk[] = {-5, 8};
-    int bb2[] = {-6, 8};
-    int bn2[] = {-7, 8};
-    int br2[] = {-8, 8};
+    char f1[] = " wb2 ";
+    char f2[] = " wfp ";
+    char f3[] = "     ";
+    char f4[] = "     ";
+    char f5[] = "     ";
+    char f6[] = "     ";
+    char f7[] = " bfp ";
+    char f8[] = " bb2 ";
+
+    char g1[] = " wn2 ";
+    char g2[] = " wgp ";
+    char g3[] = "     ";
+    char g4[] = "     ";
+    char g5[] = "     ";
+    char g6[] = "     ";
+    char g7[] = " bgp ";
+    char g8[] = " bn2 ";
+
+    char h1[] = " wr2 ";
+    char h2[] = " whp ";
+    char h3[] = "     ";
+    char h4[] = "     ";
+    char h5[] = "     ";
+    char h6[] = "     ";
+    char h7[] = " bhp ";
+    char h8[] = " br2 ";
+
+    void printBoard(void)
+    {
+        int rowVal = 97;
+        char colVal = "1";
+        printf("%c", rowVal, colVal);
+
+        for (int i=0; i<8; ++i)
+        {
+            
+            ++rowVal;
+        }
+    }
 
     int main(void)
     {
         start(0);
+        printBoard();
         return 0;
     }

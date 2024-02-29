@@ -1,5 +1,5 @@
 // start program
-//#include "/home/zmr_01001100/tmcs_/tmcs_/tmcs-l/lib/start.h"
+//#include "/home/zmr_4c/tmcs/tmcs-l/lib/start.h"
 #include <stdio.h>
 
 
